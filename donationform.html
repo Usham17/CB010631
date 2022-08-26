@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles/donationform.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1 class="form-tittle">Donation</h1>
+            <form>
+                <div class="header-row">
+                    <legend>Personal Details</legend>
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="address" required>
+                        <label for="address">Your Address</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <legend>Credit Card Details</legend>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="number" id="carddeno" name="carddeno" required>
+                            <label for="cardeno">Card Number</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="cvvcode" name="cvvcode" required>
+                            <label for="cvvcode">CVV</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="number" id="month" name="month" min="01" max="12" required>
+                            <label for="month">Expiry month</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="year" name="year" min="2022" max="2030" required>
+                            <label for="year">Expiry year</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="input-group">
+                    <span for="Amount">Amount</span>
+                    <select name="amount" id="amount" required>
+                        <option value="100">100LKR</option>
+                        <option value="250">250LKR</option>
+                        <option value="500">500LKR</option>
+                        <option value="1000">1000LKR</option>
+                        <option value="2500">2500LKR</option>
+                        <option value="5000">5000LKR</option>
+                        <option value="10000">10000LKR</option>
+                    </select>
+                </div>
+                <div class="buttonsub">
+                    <button id="mybtn" class="btn" onclick="openPopup">Submit</button>
+                    <div class="popup" id="popup">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been succesfully submitted</p>
+                        <button type="button" onclick="closePopup">OK</button>
+                    </div>
+                </div>
+                
+                
+            </form>
+            
+        </div>
+    </div>
+
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>

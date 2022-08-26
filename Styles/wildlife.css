@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/home-page-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.header nav a span {
+    font-weight: 300;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+    margin: 0 12px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+    
+}
+
+.nav-links ul li a::before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::before {
+    width: 100%;
+}
+.nav-links ul li a::after {
+    content: '' ;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a:hover {
+    color: aqua;
+}
+
+.nav-links ul li a:hover::before {
+    right: 0;
+}
+
+.nav-links ul li a:hover::after {
+    left: 0;
+}
+
+
+/* wildlife page start */
+.wildlife-header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/Wildlife-page-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+
+.wildlife-content {
+    background: #a2c8e8;
+}
+.wildlife-text-box h1 {
+    margin-top: 150px;
+    font-size: 7rem;
+    color: whitesmoke;
+}
+
+.wildlife-text-box p {
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    padding-top: 40px;
+}
+
+.wildlife-content-col {
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wildlife-content-col {
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.wildlife-content-col img {
+    display: flex;
+    width: 360px;
+    height: 250px;
+    padding: 20px;
+}
+
+.layer {
+    background: transparent;
+    width: 360px;
+    height: 250px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background:rgba(226,0,0,0.7);
+}
+
+.layer h3 {
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer-text P {
+    color: black;
+    font-size: 13px;
+    padding: 20px;
+    width: 360px;
+}
+
+.layer-text iframe {
+    width: 360px;
+    padding: 20px;
+}
+
+
+/* table */
+.table {
+    background: radial-gradient(#ffc100, #ff9a00, #ff7400);
+    width: 100%;
+    padding: 30px 0px;
+    border-top: solid #ff0000;
+}
+
+.table-content {
+    align-items: center;
+    overflow-x: auto;
+}
+
+.wildlife-table {
+    margin: 25px 0px;
+    font-size: 18px;
+    border: solid wildlife-table 4px;
+}
+
+.wildlife-table tr td {
+    border: solid #ff0000 4px;
+    text-align: center;
+    margin: 2%;
+    padding: 35px;
+    color: black;
+}
+
+.wildlife-table tr th {
+    background-color: #ff4d00;
+    text-align: center;
+    color: black;
+    border: solid #ff0000 4px;
+}

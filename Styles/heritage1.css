@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/home-page-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.header nav a span {
+    font-weight: 300;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+    margin: 0 12px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+    
+}
+
+.nav-links ul li a::before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::before {
+    width: 100%;
+}
+.nav-links ul li a::after {
+    content: '' ;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a:hover {
+    color: aqua;
+}
+
+.nav-links ul li a:hover::before {
+    right: 0;
+}
+
+.nav-links ul li a:hover::after {
+    left: 0;
+}
+
+/* heritage1 page start */
+.heritage1-header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/heritage-1.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+
+.heritage1-header h1 {
+    color: aquamarine;
+}
+.heritage1-text-box {
+    color: #fff;
+    margin-top: 100px;
+    font-size: 6rem;
+}
+
+.heritage1-text-box h1 {
+    color: #ff9a00;
+}
+.sigiriya {
+    background-color: #fbd887;
+    text-align: center;
+}
+.about-sigiriya h2 {
+    color: black;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.about-sigiriya p {
+    color: black;
+    font-size: 20px;
+}
+
+.sigiriya-content {
+    margin: 0;
+    padding: 50px 0;
+    background: aquamarine;
+}
+
+.sigiriya-content h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 70px;
+    font-weight: 600;
+    padding: 0 0 0 10px;
+}
+
+.heritage-sigiriya {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.heritage-sigiriya-col {
+    flex-basis: 48%;
+}
+
+.heritage-sigiriya-col img{
+    width: 100%;
+    border-radius: 10px 10px;
+}
+
+
+.heritage-sigiriya-col p {
+    color: black;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+}
+
+.heritage-sigiriya-col img:hover {
+    box-shadow: 0 0 30px 0px #ff9a00; 
+}

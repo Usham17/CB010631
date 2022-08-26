@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/home-page-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.header nav a span {
+    font-weight: 300;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+    margin: 0 12px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+    
+}
+
+.nav-links ul li a::before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::before {
+    width: 100%;
+}
+.nav-links ul li a::after {
+    content: '' ;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a:hover {
+    color: aqua;
+}
+
+.nav-links ul li a:hover::before {
+    right: 0;
+}
+
+.nav-links ul li a:hover::after {
+    left: 0;
+}
+
+
+/* heritage2 page start */
+.heritage2-header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(../Images/heritage2-bg.jpg) fixed;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    color: black;
+}
+
+.heritage2-text-box {
+    color: #fff;
+    margin-top: 150px;
+    font-size: 3rem;
+}
+.heritage2-text-box h1 {
+    color: lightgrey;
+}
+.anuradhapura {
+    background: radial-gradient(#c0c5ce, #a7adba, #65737e);
+}
+
+.anuradhapura-row {
+    margin: 0 20%;
+    border-radius: 30px;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    background: url(../Images/anuradhapura3.jpg)no-repeat fixed center;
+    flex-basis: 25%;
+    border-radius: 10px;
+    position: relative;
+    box-sizing:border-box ;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.7);
+}
+.about-anuradhapura h2 {
+    padding-top: 5%;
+    color: black;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: #a7adba;
+}
+.about-anuradhapura p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.anuradhapura-row2 {
+    margin: 0 20%;
+    border-radius: 30px;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    background: url(../Images/isurumuniya-anuradhapura.jpg)no-repeat fixed center;
+    flex-basis: 25%;
+    border-radius: 10px;
+    position: relative;
+    box-sizing:border-box ;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.7);
+}
+
+.heritage-anuradhapura {
+    background: black;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.heritage-anuradhapura-col h2 {
+    padding-top: 5%;
+    color: lightgrey;
+}
+
+.heritage-anuradhapura-col img{
+    width: 50%;
+    border-radius: 15px 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.heritage-anuradhapura-col p {
+    color: lightgrey;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+    width: 70%;
+}
+
+.heritage-anuradhapura-col img:hover {
+    box-shadow: 0 0 30px 0px lightgrey; 
+}
